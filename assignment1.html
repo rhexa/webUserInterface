@@ -4,13 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .tablet-logo {
+            display: none;
+        }
+
+        @media only screen and (max-width: 980px) {
+            .desktop-logo {
+                display: none;
+            }
+
+            .tablet-logo {
+                display: block;
+            }
+
+            nav a {
+                font-size: 10px;
+            }
+
+            av ul {
+                padding: 0px;
+            }
+            
+            .main-container {
+                width: 720px;
+            }
+        }
+
+        nav li {
+                display: inline;
+            }
+
+        nav a {
+            text-decoration: none;
+            margin: auto auto auto auto;
+            border: auto auto auto auto;
+            padding: 0 10px 0 10px;
+            background-color: black;
+            color: ghostwhite;
+            text-transform: uppercase;
+            font: 700 20px/32px Open Sans Condensed, Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+        }
+
+        nav a:hover {
+            background-color: ghostwhite;
+            color: black;
+        }
+
+        nav ul {
+            padding: 0 5px;
+            background-color: black;
+        }
+
+        .main-container {
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <p>
-            TITLE
-        </p>
-    </header>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam quae ab natus dolore soluta repudiandae possimus quia facilis quisquam distinctio, vero molestiae, delectus corporis consequatur! Nihil corporis quibusdam iure? Aperiam.</p>
+    <div class="main-container">
+        <header>
+            <a href="https://www.express.co.uk/life-style/science-technology/1381189/Popular-Android-apps-banned-from-Google-Play-Store" class="logo">
+                <img src="https://cdn.images.express.co.uk/img/page/express_logo.png" class="desktop-logo" alt="desktop-logo">
+                <img src="https://cdn.images.express.co.uk/img/page/express_logo_tablet.png" alt="tablet-logo" class="tablet-logo">
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Showbiz & TV</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Comment</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Life & Style</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <div class="article_header">
+                <h1>
+                    Popular Android apps are getting banned from the Google Play Store next month
+                </h1>
+                <h3>
+                    MILLIONS of Android users will soon lose access to some popular apps that are getting banned from the Google Play Store.
+                </h3>
+                <div class="publish_info">
+                    <div class="author">
+                        <p>By <a href="#">Dion Dassanayake</a></p>
+                    </div>
+                    <time datetime="2021-01-10 07:01">PUBLISHED: 07:01, Sun, Jan 10, 2021</time>
+                </div>
+            </div>
+            <p>
+                Next month Android fans are scheduled to see some popular apps get removed from the Google Play Store. In total eight Android apps are set to be taken down from the Play Store in February, with one of these apps downloaded over a billion times - and others downloaded over 100million times. Among the apps set to be removed are CamScanner - which has a 4.7 average Play Store rating based on over three millions reviews.
+            </p>
+            <P>
+                These popular Android apps aren't being removed from the Play Store for all users, but instead are set to be delisted from the US version of the Google app marketplace.
+            </P>
+            <P>
+                That's due to a new executive order that outgoing President Donald Trump has signed during his final weeks in office.
+            </P>
+            <P>
+                As reported by Android Police, Trump has banned "transactions" with a number of Chinese-made apps by any person in the US.
+            </P>
+            <P>
+                The Android-centric website noted this would "effectively ban" these apps from both the Google Play Store and Apple App Store.
+            </P>
+            <P>
+                The executive order comes into effect of February 19 - which is almost a month after Trump will be replaced by President-elect Joe Biden.
+            </P>
+            <P>
+                The order says: "The United States has assessed that a number of Chinese connected software applications automatically capture vast swaths of information from millions of users in the United States, including sensitive personally identifiable information and private information, which would allow the PRC and CCP access to Americans’ personal and proprietary information."
+            </P>
+            <P>
+                The apps in question that are affected by this order are Alipay, CamScanner, QQ Wallet, SHAREit, Tencent QQ, VMate, WeChat Pay, and WPS Office.
+            </P>
+            <P>
+                During his time in office Trump has gone after a number of Chinese tech giants, with TikTok and WeChat previously threatened with bans.
+            </P>
+            <P>
+                Both of these app bans failed to materialise, however the Trump administration has placed significant pressure on smartphone maker Huawei.
+            </P>
+            <P>
+                In 2018 Huawei was placed on the US Entity trade blacklist, which means the P40 Pro makers couldn't have crucial Google apps and services installed on their phones straight out of the box.
+            </P>
+            <P>
+                While last year the White House put further pressure on Huawei by enforcing sanctions that meant any firm that supplied parts which used any kind of US-made tech had to receive approval to supply Huawei.
+            </P>
+            <P>
+                This even affected goods made outside of the US such as crucial display parts made by Samsung and even Huawei's own Kirin chips.
+            </P>
+            <P>
+                Huawei has had to do a lot of adapting in the face of these sanctions, going on to create their own operating system - HarmonyOS - which will debut this year and rival Android.
+            </P>
+            <P>
+                And Huawei has said if any fellow Chinese smartphone makers are barred by the US from Google Mobile Services then they will be able to use HarmonyOS instead.
+            </P>
+        </article>
+    </div>
+    
 </body>
 </html>
